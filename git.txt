@@ -1,0 +1,30 @@
+*Terminal Commands*
+    1. cls              => for clear screen                         *clear =>linux*
+    2. dir              => list all the directories                 *ls =>linxu*
+    3. cd               => change directory
+                        eg. cd <directory name>
+    4. cd ..            => to move backward (absolute url) 
+    5. cd <do> and tab  => auto completes word and press tab again for another word 
+    6. d: or ...        => to change folder or path
+
+*Git*
+PER PROJECT ONE TIME SETUP
+    1. git init         //initializes git into your project
+    2. git remote add origin <git-repo-url>
+        git remoter -v  // to check if no.2 is working or not
+
+EVERY DAY COMMANDS
+    git status  //online ra local repository ma k diff. xa compare garxa
+              red aako xa vane tyo folder and files online repository ma xaina
+*U => untrack files or new files*
+*M => modified code of existing file*
+
+*    PUSH
+        1. git add .                // dot(.) refers to all 
+           -->git add <file name>   //specific code push garna
+        2. git commit -m "<message>"
+        3. git push
+        Then copy and paste --> git push --set-upstream origin master   //yo chai per project ekchoti matra garnu parxa
+
+*   PULL
+        1.

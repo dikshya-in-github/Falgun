@@ -1,28 +1,22 @@
-Ctrl + shitf + P.......for opening setting
+Ctrl + Shitf + P.......for opening setting
 Alt + tab....for switching window
 Alt+ z .....for word wrap
 Ctrl + f .....format document
-! + tab..... for html 
-Ctrl + B.... for removing
-ctrl +p....for searching
-ctrl + r.....to refresh
-alt+ hold arrows.......to move lines
+! + tab.....Html boiler plate
+Ctrl + B.... for removing or opening
+Ctrl +p....for searching
+Ctrl + r.....to refresh browser
+Alt+ hold arrows.......to move lines
 Ctrl + Enter......to change line
 Alt + shift + down arrow.....to copy same thing
 Ctrl + space..... for hint
-ctrl + 0.......for 100%
-ctrl + w.... for closing tab
-window + arrow.....to split screen
-windows V......clipboard
+Ctrl + 0.......for 100%
+Ctrl + w.... for closing tab
+Window + arrow.....to split screen
+Windows V......clipboard
 
-shift + press tab......to select
-select something and press shift+arrow key.......to select longer
-hold alt key+ arrows.....for writing in multiple line at once and home and end key
-select line and alt + shift + i......multiple cursor
-
-
-*Terminal*
-cls  =>for clear screen
-dir  =>list all the files inside the directory
-cls  =>for clear screen
-cls  =>for clear screen
+Shift + press tab......to select
+Select something and press shift+arrow key.......to select longer
+Hold alt key+ arrows.....for writing in multiple line at once and home and end key
+Select line and alt + shift + i......multiple cursor
+F12.....to rename and to open console 

@@ -21,7 +21,7 @@ EVERY DAY COMMANDS
 
 *    PUSH
         1. git add .                // dot(.) refers to all 
-           -->git add <file name>   //specific code push garna
+           -->git add <file name>   //specific code push garna and one at a time 
         2. git commit -m "<message>"
         3. git push
         Then copy and paste --> git push --set-upstream origin master   //yo chai per project ekchoti matra garnu parxa

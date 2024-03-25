@@ -16,15 +16,26 @@ PER PROJECT ONE TIME SETUP
 EVERY DAY COMMANDS
     git status  //online ra local repository ma k diff. xa compare garxa
               red aako xa vane tyo folder and files online repository ma xaina
-*U => untrack files or new files*
-*M => modified code of existing file*
+
+    *U => untrack files or new files*
+    *M => modified code in existing file*
+
+CLONING A REPO
+    //Inside any terminal
+        git clone <URL>
 
 *    PUSH
         1. git add .                // dot(.) refers to all 
            -->git add <file name>   //specific code push garna and one at a time 
         2. git commit -m "<message>"
         3. git push
-        Then copy and paste --> git push --set-upstream origin master   //yo chai per project ekchoti matra garnu parxa
+        Then copy and paste --> git push --set-upstream origin master   //Sabai code master branch ma push gardinxa
+
+            //To push to specific branch
+            --> git push origin <branch_name>
 
 *   PULL
-        1.
+        1. git pull
+
+CREATE NEW BRANCH
+    git checkout -b <branch_name>

@@ -23,6 +23,8 @@ brands[0].ceos[0].name = "correct-ceo";
 brands[0].ceos[0].address = "korea";
 console.log(brands);
 
+
+
 /* let brands = [
   {
     name: "Apple",
@@ -59,3 +61,38 @@ user2.name = "shyam";
 
 console.log("Before",user1.name);
 console.log("After",user2.name);
+
+
+//Changing object key
+let product =  {
+  name:  "projector",
+  rate : 50000  //rate to price
+}  
+product.price = product.rate
+delete product.rate
+console.log(product);
+
+
+
+
+let productApiData = {
+  products : [
+      { name: "watch", price: 10000 },
+      { name: "mouse", price: 10000 },
+      { name: "cover", price: 100 },
+      { name: "mobile", rate: 1000000 },
+  ]
+}
+productApiData.products[3].price = productApiData.products[3].rate;
+delete productApiData.products[3].rate
+console.log(productApiData.products[3]);
+
+
+
+//Function
+const sum = (num1, num2) => {
+  let s = num1 + num2;
+  // console.log( a + " + " + b + " = ", s);
+  console.log( `${num1} + ${num2} = ${s}` ); // `${} ${}`  this is template literal or string literal
+}
+sum(100, 200)

@@ -34,7 +34,7 @@ let courses = ["python", "QA", "Web", "graphics", "AI"];
 courses[4] = "Artificial Intelligence";
 console.log(courses);
 
-//Objects
+//Object
 let projector = {
   brand: "viewsonic",
   color: "white",

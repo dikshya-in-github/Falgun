@@ -15,8 +15,13 @@ Ctrl + w.... for closing tab
 Window + arrow.....to split screen
 Windows V......clipboard
 
-Shift + press tab......to select
+Shift + press arrow......to select letters
+Ctrl + shift + arrow.....to select word
 Select something and press shift+arrow key.......to select longer
-Hold alt key+ arrows.....for writing in multiple line at once and home and end key
+Shift + end or home .....to select full line
+Ctrl + arrow......to move across words
+
+Hold alt key+ point.....for writing in multiple line at once and ....home and end key
 Select line and alt + shift + i......multiple cursor
-F12.....to rename and to open console 
+F2.....to rename 
+F12.... to open console

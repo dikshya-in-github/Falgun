@@ -11,7 +11,7 @@
 PER PROJECT ONE TIME SETUP
     1. git init         //initializes git into your project
     2. git remote add origin <git-repo-url>
-        git remoter -v  // to check if no.2 is working or not
+        git remote -v  // to check if no.2 is working or not
 
 EVERY DAY COMMANDS
     git status  //online ra local repository ma k diff. xa compare garxa
@@ -20,7 +20,7 @@ EVERY DAY COMMANDS
     *U => untrack files or new files*
     *M => modified code in existing file*
 
-CLONING A REPO
+CLONING A REPO.
     //Inside any terminal
         git clone <URL>
 

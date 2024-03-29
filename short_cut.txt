@@ -25,3 +25,4 @@ Hold alt key+ point.....for writing in multiple line at once and ....home and en
 Select line and alt + shift + i......multiple cursor
 F2.....to rename 
 F12.... to open console
+ctrl 1.....moves tab to first

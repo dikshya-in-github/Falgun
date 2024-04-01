@@ -31,11 +31,11 @@ let student = {
     hasMetAttendace: true
 }
 // let {paid, hasScholarship, hasMetAttendace} = student;   //Object destructuring
-/* if ( (student.paid || student.hasScholarship) && (student.hasMetAttendace) ){
+if ( (student.paid || student.hasScholarship) && (student.hasMetAttendace) ){
     console.log("Ram can give exam");    
 }else{
     console.log("Ram can't give exam");
-}  */
+} 
 
 
 //Ternary Operator

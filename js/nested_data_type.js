@@ -25,7 +25,7 @@ console.log(brands);
 
 
 
-/* let brands = [
+let brands = [
   {
     name: "Apple",
     ceo: "Tim Cook",
@@ -44,7 +44,7 @@ console.log(brands);
 ];
 console.log(brands);
 brands[1].name = "samsung";
-console.log(brands); */
+console.log(brands); 
 
 
 
@@ -61,6 +61,7 @@ user2.name = "shyam";
 
 console.log("Before",user1.name);
 console.log("After",user2.name);
+
 
 
 //Changing object key

@@ -21,10 +21,10 @@ let todos = [
         status: "pending",
     },
 ]
-/* 
+
 for (let i = 0; i < todos.length; i++) {
     console.log(`${todos[i].title} is ${todos[i].status} `);
-} */
+} 
 
 
 //using function
@@ -62,11 +62,6 @@ function calculateSum(...args ) {   //...args lay chai rest of the value of lai 
 console.log(calculateSum(1, 3, 4));
 console.log(calculateSum(100, 200, 300)); 
 
-
-//foreach loop
-/* 
-
-*/
 
 //typeof vanne chai auta function which defines variable's data type
 let type = typeof ("ram")

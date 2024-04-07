@@ -41,14 +41,3 @@ if ( (student.paid || student.hasScholarship) && (student.hasMetAttendace) ){
 //Ternary Operator
 // student.paid || student.hasScholarship ?  console.log("ram can give exam"): console.log("ram can't give exam");
 console.log(`ram ${(student.paid || student.hasScholarship) && (student.hasMetAttendace)? "can" : "cannot" } give exam`);
-
-
-//For each function
-    /* let number = [1,2,4,3]
-    // for (let i =0; i<number.length;i++){
-    //     console.log(number[i]);
-    // }
-
-    number.forEach((Element)=>{
-        console.log(Element*2);
-    }) */

@@ -28,3 +28,4 @@ F12.... to open console
 ctrl 1.....moves tab to first
 select line + { or }.....to tab lines
 Select word + F2....changes spelling of all words
+Window + . ....opens emojis

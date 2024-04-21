@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+  </head>
+
+  <body>
+    <h1 id="heading">Todos</h1>
+
+    <form onsubmit="handleSubmit(event)">
+      <input type="text"  value="" id="myInput" required />      
+      <button>Submit</button>
+    </form>
+
+    <ul id="todos-li">        
+    </ul>
+    
+    <script>
+        let todos = []   
+        
+        let stringifiedTodos = localStorage.getItem("todos");
+        let parsedTodos = JSON.parse(stringifiedTodos);
+        todos = parsedTodos || [];
+
+        convertTodos();
+
+        function convertTodos(){
+          let outputString = ""         
+          todos.forEach((el) => {
+              outputString = outputString + `<li> ${el} </li>`
+          })
+          document.getElementById("todos-li").innerHTML = outputString          
+          
+          localStorage.setItem("todos", JSON.stringify(todos))
+        }
+
+        function handleSubmit(event){
+          event.preventDefault();
+          let inputValue = document.getElementById("myInput").value
+          todos.push(inputValue)
+
+          convertTodos()
+          document.getElementById("myInput").value =""
+        }
+
+
+        //9:28
+    </script>
+
+  </body>
+</html>

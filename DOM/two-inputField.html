@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+
+  <body>
+    <h1 id="heading">Todos</h1>
+
+    <form onsubmit="handleSubmit(event)">
+      <input name= "title" type="text"  value="" id="myInput" placeholder="Title" required />      
+      <input name="status" type="text"  value="" id="myStatus" placeholder="Status" required />      
+      <button>Submit</button>
+    </form>
+   
+    <ul id="todos-li">        
+    </ul>
+    
+    <script>
+        let todos = []   
+        let stringifiedTodos = localStorage.getItem("todos");
+        let parsedTodos = JSON.parse(stringifiedTodos);
+        todos = parsedTodos || [];
+
+        convertTodos();
+
+        function convertTodos(){
+          let outputString = ""  
+
+          todos.forEach((el) => {
+              outputString = outputString + `<li> ${el.myInput} - ${el.myStatus} </li>`
+          })
+          document.getElementById("todos-li").innerHTML = outputString
+          
+          localStorage.setItem("todos", JSON.stringify(todos))
+        }
+
+        function handleSubmit(event){
+          event.preventDefault();
+
+          // let inputValue = document.getElementById("myInput").value
+          // let inputStatus = document.getElementById("myStatus").value
+          let inputValue = event.target.title.value
+          let inputStatus = event.target.status.value
+
+          todos.push({  
+            myInput : inputValue ,
+            myStatus: inputStatus,
+          })        
+
+          convertTodos()
+          
+          document.getElementById("myInput").value =""
+          document.getElementById("myStatus").value =""
+        }
+     
+    </script>
+
+  </body>
+</html>

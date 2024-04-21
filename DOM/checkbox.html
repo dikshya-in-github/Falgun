@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h1 id ="heading">Todos</h1>
+    <form action="" onsubmit="handleSubmit(event)">
+        <input type="text" id="myInput" required>
+        <input type="checkbox" id="checkBox">
+        <button>Submit</button>
+    </form>
+    <ul id="todos-li">
+        <li>Html</li>
+        <li>Css</li>
+        <li>Javascript</li>
+    </ul>
+    <script>   
+        function handleSubmit(event){
+            event.preventDefault()
+            let inputValue = document.getElementById("myInput").value
+            let myCheck = document.getElementById("checkBox")            
+            let newli = document.createElement("li")
+            if(myCheck.checked){
+                newli.innerText = inputValue + "✅"
+                document.getElementById("todos-li").appendChild(newli)
+            }else{
+                newli.innerText = inputValue + "❌"
+            document.getElementById("todos-li").appendChild(newli)
+            }
+           
+            document.getElementById("myInput").value = ""
+        }
+    </script>
+</body>
+</html>

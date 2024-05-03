@@ -1,0 +1,11 @@
+img{
+    max-width: 100%;
+}
+
+.product{
+    border: 1px solid;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    width: 400px;
+}

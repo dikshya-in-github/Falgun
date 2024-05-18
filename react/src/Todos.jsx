@@ -1,57 +1,78 @@
-import { useState } from "react";
-import "./main"
+import { useState } from "react"
 
 export default function Todos() {
-  let todosData = [
-    {
-      title: "Html",
-      status: true,
-    },
-    {
-      title: "Css",
-      status: true,
-    },
-    {
-      title: "Javascript",
-      status: false,
-    },
-  ];
+    let todosData = [
+        {
+            title: "Html",
+            status: false,
+        },
+        {
+            title: "Css",
+            status: false,
+        },
+        {
+            title: "Javascript",
+            status: false,
+        },
+    ]
 
-  const [todoList, setTodoList] = useState([...todosData]);
-  const [newTodos, setNewTodos] = useState("");
-  const [checked, setChecked] = useState(false);
+    const [todoList, setTodoList] = useState([...todosData])
+    const [newTodos, setNewTodos] = useState("")
 
-  function handleChange(event) {
-    setNewTodos(event.target.value);
-  }
+    function addTodos(event) {
+        event.preventDefault()
+        setTodoList([...todoList, { title: newTodos, status: true }])
+    }
 
-  function addTodos() {
-    setTodoList([...todoList, {title: newTodos, status: true}]);
-  }
+    function handleChange(event) {
+        setNewTodos(event.target.value)
+    }
 
+    function toggleStatus(idx) {
+        let temp = [...todoList]
+        temp[idx].status = !temp[idx].status
+        setTodoList(temp)
+    }
 
-  function check(event) {
-    setChecked(event.target.true);
-  }
+    function deleteTodos(idx) {
+        let temp = [...todoList]
+        temp.splice(idx, 1)
+        setTodoList(temp)
+    }
 
-  return (
-    <>
-      <h2>Todos</h2>
+    return (
+        <>
+            <h2>Todos</h2>
 
-      <input required type="text" onChange={handleChange} />
-      <button onClick={addTodos}> Add </button>
+            <form onSubmit={addTodos}>
+                <input required type="text" onChange={handleChange} />
+                <button> Add </button>
+            </form>
 
-      <ul>
-        {todoList.map((el, idx) => {
-          return (
-            <li key={idx}>
-              <input checked={el.status} type="checkbox" onChange={check} />
-              {el.title}
-              {/* {checked ? <div> checked</div> : <div> not-checked. </div>} */}
-            </li>
-          );
-        })}
-      </ul>
-    </>
-  );
+            <ul className="list">
+                {todoList.map((el, idx) => {
+                    return (
+                        <li key={idx}>
+                            <input
+                                type="checkbox"
+                                checked={el.status}
+                                onChange={() => {
+                                    toggleStatus(idx)
+                                }}
+                            />
+                            <span className={`${el.status ? "line-through" : ""}`}>{el.title}</span>
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    deleteTodos(idx)
+                                }}
+                            >
+                                Delete
+                            </button>
+                        </li>
+                    )
+                })}
+            </ul>
+        </>
+    )
 }

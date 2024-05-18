@@ -4,17 +4,22 @@
     box-sizing: border-box;
 } */
 
-img{
+img {
     max-width: 100%;
 }
 
-.product{
+.product {
     border: 1px solid;
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     margin-bottom: 1rem;
     width: 400px;
 }
-li{
-    list-style:none;
+
+.list{
+    list-style: none;
+}
+
+.line-through{
+    text-decoration: line-through;
 }
